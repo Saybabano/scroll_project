@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f7f7f7;
+  color: #777;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 0.5rem;
+  color: #000000;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #49a6e9;
+}
+
+#nav {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1170px;
+  height: 8rem;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #222;
+}
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .links-container {
+    height: auto !important;
+  }
+
+  .links {
+    flex-direction: row;
+  }
+
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.banner {
+  background: url('https://images8.alphacoders.com/707/707782.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.banner h1 {
+  font-size: 3rem;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #49a6e9;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #222;
+}
+
+.section {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.section .title h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.section .title span {
+  color: #49a6e9;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer span {
+  color: #49a6e9;
+}
+
+
+.top-link {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  display: none;
+  background: #49a6e9;
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.top-link:hover {
+  background: #222;
+}
+
+.show-link {
+  display: flex;
+}
